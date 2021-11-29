@@ -22,7 +22,8 @@ const forecast = (latitude,longitude,callback) =>{
         }else if (body.error){
             callback('Unable to find location. try another search. ', undefined)
         }else{
-            callback( undefined,body.current.weather_descriptions[0] + '. the tempreture is ' +  body.current.temperature + ' degrees out .it feels like ' + body.current.feelslike + ' degrees out.')
+            callback( undefined,body.current.weather_descriptions[0] + '. the tempreture is ' +  body.current.temperature + ' degrees out .it feels like ' + body.current.feelslike + ' degrees out. '+ 
+                      'and the pressure is ' + body.current.pressure + '. moreover the wind degree is : '+ body.current.wind_degree + 'ْ')
         }
     })
 }  
