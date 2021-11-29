@@ -1,8 +1,5 @@
 console.log('this means that js file added successfully!!')
 
-
-
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input')
 
